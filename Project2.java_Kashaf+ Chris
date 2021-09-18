@@ -1,0 +1,43 @@
+
+public class Project2 {
+		// This project was completed by Christian Kizer and Kashaf Mujeeb
+		// .
+		public static void main(String[] args) 
+		{
+			String BOOK1 = "Three Sisters, Bi Feiyu";
+			String BOOK2 = "Song of the Solomon, Toni Morrison";
+			String BOOK3 = "Owls Don't Have to Mean Death, Chip Livingston";	
+			double price1 = 18.99;
+			double price2 = 11.99;
+			double price3 = 80.50;
+			int copies1 = 2;
+			int copies2 = 4;
+			int copies3 = 1;
+			double totalbefore; 
+			final double TAXRATE = 8.75;
+			double totalafter; 
+			double salestax;
+			
+			totalbefore = copies1 * price1 + copies2 * price2 + copies3 * price3;
+			salestax = totalbefore * (TAXRATE / 100);
+			totalafter = totalbefore + salestax;
+			
+			System.out.println("Purchase " + copies1 + " copies of " + BOOK1 + ". Each copy cost $" + price1 + ".");
+			System.out.println("Purchase " + copies2 + " copies of " + BOOK2 + ". Each copy cost $" + price2 + ".");
+			System.out.println("Purchase " + copies3 + " copies of " + BOOK3 + ". Each copy cost $" + String.format("%.2f", price3) + ".");
+			System.out.println("Total before tax: $" + totalbefore);
+			System.out.println("Sales tax: $" + String.format("%.2f", salestax));
+			System.out.println("The total cost of your order will be $" + String.format("%.2f", totalafter));
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+	}
+
+
